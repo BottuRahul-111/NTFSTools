@@ -35,4 +35,12 @@ public class AppTest {
     	int Actual=App.sum(-100, 200);
         assertEquals(Expected,Actual);
     }
+    
+    @Test
+    public void testsSunWithZeros() {
+    	App App=new App();
+    	int Expected=0;
+    	int Actual=App.sum(0, 0);
+        assertEquals(Expected,Actual);
+    }
 }
